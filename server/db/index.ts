@@ -1,7 +1,7 @@
 import pgPromise from 'pg-promise';
 import {type IInitOptions} from 'pg-promise';
 import {config} from 'dotenv';
-config()
+config();
 
 const initOptions: IInitOptions = {/* initialization options */};
 
@@ -21,4 +21,3 @@ const dbConfig = {
 const db = pgp(dbConfig);
 
 export default db;
- 

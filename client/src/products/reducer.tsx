@@ -8,16 +8,13 @@ export type ReducerState = {
 };
 
 export const actionTypes = {
-  set: "SET_PRODUCTS",
-  add: "ADD_PRODUCT",
+  set: 'SET_PRODUCTS',
+  add: 'ADD_PRODUCT',
 } as const;
-
-// type AllActionKeys = keyof typeof actionTypes;
-// type AllActionTypes = (typeof actionTypes)[AllActionKeys];
 
 export type AddProducts = {
   type: typeof actionTypes.set;
-  payload: ReducerState["products"];
+  payload: ReducerState['products'];
 };
 
 export type AddProduct = {

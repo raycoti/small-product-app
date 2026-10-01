@@ -10,11 +10,14 @@ const ProductsPage = () => {
     fetchProducts();
   }, [fetchProducts]);
 
-  const handleSubmit = useCallback(async (e: SubmitEvent) => {
-    e.preventDefault()
-    await createProduct(newProductName);
-    setNewProductName('');
-  }, [newProductName, setNewProductName, createProduct]);
+  const handleSubmit = useCallback(
+    async (e: SubmitEvent) => {
+      e.preventDefault();
+      await createProduct(newProductName);
+      setNewProductName('');
+    },
+    [newProductName, setNewProductName, createProduct]
+  );
 
   return (
     <div>
