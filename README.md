@@ -43,7 +43,7 @@ In another terminal window/tab run
 
 # Verify
 
-open http://localhost:3000
+open http://localhost:5173
 create a product named mops, and confirm it appears in the list
 
 # Notes
